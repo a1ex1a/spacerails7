@@ -1,0 +1,28 @@
+<div id="<%= dom_id livro %>" style="background: #cdbbbb; border: 30px solid pink; border-radius: 20px; padding: 15px; margin-right: 50em; margin: 0 auto; width: 40%;">
+  
+  <p>
+    <strong>Nome:</strong>
+    <%= livro.nome %>
+  </p>
+
+<p>
+<strong>Autor:</strong>
+<%= livro.autor.nome %>
+</p>
+
+<p>
+<strong>Gênero:</strong>
+<%= livro.genero.nome %>
+</p>
+
+  <p>
+    <strong>Ano de publicação:</strong>
+    <%= livro.ano_de_publicacao %>
+  </p>
+
+  <p>
+    <strong>Edição:</strong>
+    <%= livro.edicao %>
+  </p>
+
+</div>

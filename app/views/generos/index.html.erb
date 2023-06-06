@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 style="color: #8f244d; margin-left: 20em;">Gêneros Literários
+  <i class="bi bi-journals"></i></h1>
+
+<div id="generos">
+  <% @generos.each do |genero| %>
+    <%= render genero %>
+    <p style="border: 2px solid #81d7cd; border-radius: 20px; padding: 0.5em; margin-right: 70em; text-align: center; background-color:#c0ebe6;margin: 0 auto; width: 40%;">
+      <%= link_to "Mostrar gênero", genero %>
+    </p><br>
+  <% end %>
+</div>
+
+    <div style="border: 2px solid #81d7cd; border-radius: 20px; padding: 0.5em; margin-right: 70em; text-align: center; background-color:#c0ebe6;margin: 0 auto; width: 40%;">
+<%= link_to "Novo gênero", new_genero_path %>
+    </div>
+
+    <style>
+  a {
+    text-decoration: none; 
+    font-family: cursive;
+  }
+</style>

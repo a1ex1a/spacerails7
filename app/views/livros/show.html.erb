@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @livro %>
+
+<div style="border: 2px solid #81d7cd; border-radius: 20px; padding: 0.5em; margin-right: 50em; text-align: center; background-color:#c0ebe6;margin: 0 auto; width: 40%;">
+  <%= link_to "Editar Livro", edit_livro_path(@livro) %> |
+  <%= link_to "Voltar para Livros", livros_path %>
+
+  <%= button_to "Excluir Livro", @livro, method: :delete %>
+</div>
+
+    <style>
+  a {
+    text-decoration: none; 
+    font-family: cursive;
+  }
+</style>

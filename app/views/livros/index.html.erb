@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 style="color: #8f244d; margin-left: 22em; ">LIVROS
+<i class="bi bi-journal-bookmark"></i></h1>
+
+
+<div id="livros">
+  <% @livros.each do |livro| %>
+    <%= render livro %>
+      <%= livro.autor.nome %>
+      <%= livro.genero.nome %>
+    <p style="border: 2px solid #81d7cd; border-radius: 20px; padding: 0.5em; margin-right: 70em; text-align: center; background-color:#c0ebe6;margin: 0 auto; width: 40%;">
+      <%= link_to "Mostrar livro", livro %>
+    </p></br>
+  <% end %>
+</div>
+
+    <div id="bt" style="border: 2px solid #81d7cd; border-radius: 20px; padding: 0.5em; margin-right: 70em; text-align: center; background-color:#c0ebe6;margin: 0 auto; width: 40%;" >
+      <%= link_to "Adicionar novo livro", new_livro_path %>
+    </div>
+
+<style>
+  a {
+    text-decoration: none; 
+    font-family: cursive;
+  }
+</style>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LIVR'ART</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- BOOSTRAP NAV -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CDN ICON BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+       <style>
+        body{
+          background: linear-gradient(to right, #939396, #ffd2bf);
+        }
+          .navbar {
+  background-color:  #98173d;
+           color: #b9f1d6;
+}
+         </style>
+
+    
+      
+  <body>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: #d2fdfe;">LIVR'ART </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="https://spacerails7.thayaneferreir2.repl.co" style="color: #d2fdfe;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://spacerails7.thayaneferreir2.repl.co/autors" style="color: #d2fdfe;">Autores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://spacerails7.thayaneferreir2.repl.co/generos" style="color: #d2fdfe;">Gênero Literário</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+    
+    
+    <%= yield %>
+  </body>
+     
+</html>
